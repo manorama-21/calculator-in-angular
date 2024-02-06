@@ -1,0 +1,28 @@
+
+<body>
+  <div>
+<br><h1>Calculator</h1>
+</div>
+<div class="calculator">
+  <div class="calculator__output">{{stringtoEvaluate}}</div>
+  <div class="calculator__keys">
+    <button class="calculator__key calculator__key--operator"(click)="takeinput('+')">+</button>
+    <button class="calculator__key calculator__key--operator"(click)="takeinput('-')">-</button>
+    <button class="calculator__key calculator__key--operator"(click)="takeinput('&times')">&times;</button>
+    <button class="calculator__key calculator__key--operator"(click)="takeinput('/')">÷</button>
+    <button class="calculator__key" (click)="takeinput('7')">7</button>
+    <button class="calculator__key" (click)="takeinput('8')">8</button>
+    <button class="calculator__key" (click)="takeinput('9')">9</button>
+    <button class="calculator__key" (click)="takeinput('4')">4</button>
+    <button class="calculator__key" (click)="takeinput('5')">5</button>
+    <button class="calculator__key" (click)="takeinput('6')">6</button>
+    <button class="calculator__key" (click)="takeinput('1')">1</button>
+    <button class="calculator__key" (click)="takeinput('2')">2</button>
+    <button class="calculator__key" (click)="takeinput('3')">3</button>
+    <button class="calculator__key" (click)="takeinput('0')">0</button>
+    <button class="calculator__key" (click)="takeinput('.')">.</button>
+    <button class="calculator__key"(click)="resetevaluate()">AC</button>
+    <button class="calculator__key calculator__key--enter" (click)="evaluateresult()">=</button>
+  </div>
+</div>
+</body>
